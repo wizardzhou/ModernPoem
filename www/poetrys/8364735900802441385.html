@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 哀争斗 | 中国近代诗九 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/img59.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="#" target="blank">互联网</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    哀争斗
+                </div>
+                <div class="author">
+                    骆成骧
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>地不生儿人有子，纷纷争斗何时已。</p>
+                     
+                     <p>爪牙易制千虎狼，冠带难妨万蛇豕。</p>
+                     
+                     <p>莫怪苍苍天不神，谁教蠢蠢尔为人。</p>
+                     
+                     <p>有生那得更避死，前倾后起如风轮。</p>
+                     
+                     <p>傥从天上观天下，尘埃扰攘何为者。</p>
+                     
+                     <p>得匆蝼蚁争青虫，黄僵白仆尸盈野。</p>
+                     
+                     <p>我亦此中牵率来，自哀不暇更谁哀。</p>
+                     
+                     <p>悠悠万事皆如此，百思令我心欲灰。</p>
+                     
+                     <p>中策愿假巨灵手，驱山掷海成原亩。</p>
+                     
+                     <p>漏流不尽开尾闾，几许桑田付黄口。</p>
+                     
+                     <p>上策防死先防生，蛮风佛教差文明。</p>
+                     
+                     <p>又恐众强恣吞噬，异族不肯留孤婴。</p>
+                     
+                     <p>斗智斗勇非上德，争地争城皆下策。</p>
+                     
+                     <p>可怜尽是人食人，谁为英雄谁盗贼。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国近代诗九.html">中国近代诗九</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

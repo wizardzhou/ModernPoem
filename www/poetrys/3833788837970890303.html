@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 在雨中    (for Z。L) | json </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/wizardzhou20.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://weibo.com/wizardzhou/home" target="blank">wizardzhou</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    在雨中    (for Z。L)
+                </div>
+                <div class="author">
+                    范想
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>雨在窗外带来了寂静中的观察</p>
+                     
+                    <p>一个纸上的大人物色彩鲜艳</p>
+                     
+                    <p>他撑开的伞上音乐响起</p>
+                     
+                    <p>他悄悄走出了词语的房间</p>
+                     
+                    <p>小河下游的妇女在呼唤</p>
+                     
+                    <p>石头里的血迹被清洗</p>
+                     
+                    <p>他走上长满青苔的河堤</p>
+                     
+                    <p>他的脖子因为雨变短</p>
+                     
+                    <p>必须承受雨滴的敲打</p>
+                     
+                    <p>必须热爱潮湿</p>
+                     
+                    <p>因此他到达模糊的对岸</p>
+                     
+                    <p>因此他需要一个客栈</p>
+                     
+                    <p>一个纸上温暖的客栈</p>
+                     
+                    <p>他需要一根毛巾擦亮额头</p>
+                     
+                    <p>雨在窗外带来了寂静中的观察</p>
+                     
+                    <p>他不知不觉就丧失了春天</p>
+                     
+                    <p>1997.8.28</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/json.html">json</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

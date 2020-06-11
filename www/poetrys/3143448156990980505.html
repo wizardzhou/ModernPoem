@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 小晨 | 中国现代诗一 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/img3.jpeg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="#" target="blank">互联网</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    小晨
+                </div>
+                <div class="author">
+                    阿坚
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>你又团结了个农村丫头</p>
+                     
+                     <p>她老家专出伺候人的天才</p>
+                     
+                     <p>你已计划她给你生个两男两女</p>
+                     
+                     <p>你可躺在床上抽烟看报打哈欠</p>
+                     
+                     <p>等着她抚睡了孩子把浓茶端上</p>
+                     
+                     <p>她长得也象东洋旧式妞女</p>
+                     
+                     <p>白，眼睛长，步履和话音都小</p>
+                     
+                     <p>每次把晾衣绳饭桌弄成风景</p>
+                     
+                     <p>然后惭愧地笑笑，牙齿一亮</p>
+                     
+                     <p>她不跟你谈文学音乐什么的</p>
+                     
+                     <p>也不用夸她啥，拍她一下就行</p>
+                     
+                     <p>你的所有虚伪在她那儿没地用</p>
+                     
+                     <p>带她下馆子，加同你有四报筷</p>
+                     
+                     <p>到了夜里她跟个小青藤似的</p>
+                     
+                     <p>可她为何不嫌你又老又穷呢</p>
+                     
+                     <p>她说我党你象农村人可不一样</p>
+                     
+                     <p>跟她相处比跟城里的省心省事</p>
+                     
+                     <p>她拿起你的文章问真能卖钱呀</p>
+                     
+                     <p>这要是个大学生不定怎么夸它</p>
+                     
+                     <p>偶尔你也想想过去的文化姑娘</p>
+                     
+                     <p>你承认自己象个自私的地主</p>
+                     
+                     <p>周一到周五活在乡下村姐身边</p>
+                     
+                     <p>周未去那个名媛沙龙文一文化</p>
+                     
+                     <p>无所谓声张，那村姐体谅你呢</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国现代诗一.html">中国现代诗一</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

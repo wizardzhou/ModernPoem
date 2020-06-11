@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 罗蜜欧与朱丽叶 | contemporary </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash11.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    罗蜜欧与朱丽叶
+                </div>
+                <div class="author">
+                    张枣
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>他最后吻了吻她夭灼的桃颊，</p>
+                     
+                    <p>便认定来世是一块风水宝地；</p>
+                     
+                    <p>嫉妒死永霸了她姣美的呼吸，</p>
+                     
+                    <p>他便将穷追不舍的剧毒饮下。</p>
+                     
+                    <p>而她，看在眼里，急得直想尖咒：</p>
+                     
+                    <p>“错了，傻孩子，这两分钟的死</p>
+                     
+                    <p>还不是为了生而演的一出戏？！”</p>
+                     
+                    <p>可她喊不出，象黑夜愧对白昼。</p>
+                     
+                    <p>待到她挣脱了这场噩梦之网，</p>
+                     
+                    <p>她的罗蜜欧已变成另两分钟。</p>
+                     
+                    <p>她象白天疑惑地听了听夜晚。</p>
+                     
+                    <p>唉，夜莺的婚曲怎么会是假的？</p>
+                     
+                    <p>世界人声鼎沸，游戏层出不穷——</p>
+                     
+                    <p>她便杀掉死踅进生的真实里。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/contemporary.html">contemporary</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

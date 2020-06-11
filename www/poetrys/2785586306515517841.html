@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 题仲文画梅、雪涛补双鹊大幅 | 中国近代诗十四 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash194.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    题仲文画梅、雪涛补双鹊大幅
+                </div>
+                <div class="author">
+                    郭风惠
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>秦夫子，寿者徙，颜如童兮一发无。</p>
+                     
+                     <p>画笔倏然落苍鹘，千崖万壑如可呼，呼来腕底奇画图。</p>
+                     
+                     <p>看此老梅如怒虬，腾踔翻屈不可捉，满身鳞甲，化为千花亿蕊如云铺。</p>
+                     
+                     <p>云欲下兮怪石相勾连，犹如古铁锈苔钱。</p>
+                     
+                     <p>周遭细草寒不蔫，靴纹绉浪何涓涓。</p>
+                     
+                     <p>逼肖渺然桃花水，径与唤起李青莲，拍手叫绝三千年。</p>
+                     
+                     <p>何来双鹊喳喳且报喜，老涛落墨光含紫。</p>
+                     
+                     <p>画鸟更比真鸟神，竖尾鼓翅栖似起。</p>
+                     
+                     <p>七十健叟画不止，卉木虫豸、奇翮异鳞，流落人间何止千万纸。</p>
+                     
+                     <p>攫得徐黄林吕白阳解韬之神髓，我非阿好实观止。</p>
+                     
+                     <p>而我题诗愧鄙俚。</p>
+                     
+                     <p>凝神看画且勿哗，直欲下拜心孔嘉。</p>
+                     
+                     <p>清冷抱冰餐烟霞，僵指题字如蚓蛇。</p>
+                     
+                     <p>久之忽觉寒起粟。</p>
+                     
+                     <p>只恐纸上老梅化作冻云飞雪花。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国近代诗十四.html">中国近代诗十四</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

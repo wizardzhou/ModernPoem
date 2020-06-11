@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 招魂  ——给二十世纪的中国诗人 | min </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash56.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    招魂  ——给二十世纪的中国诗人
+                </div>
+                <div class="author">
+                    杨牧
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>霜花满衣，一只孤雁冷冷地飞过</p>
+                     
+                    <p>古渡的吹箫人立着——回东方来</p>
+                     
+                    <p>梦里一声鼓，醒时一句钟</p>
+                     
+                    <p>李候的迷失者啊</p>
+                     
+                    <p>你的鲜血自荒塚里泛滥而来</p>
+                     
+                    <p>让明日的枯骨长埋雪地</p>
+                     
+                    <p>纸钱在残碑废塔前飞着</p>
+                     
+                    <p>撩拔墓穴流出来幽古的芬芳</p>
+                     
+                    <p>霜花落在吹箫人的脸上啊</p>
+                     
+                    <p>清明早过，谁在坟山外打着七彩的阳伞？</p>
+                     
+                    <p>那是簇拥而过的晚云</p>
+                     
+                    <p>九月的红蓼草在河岸上开着凄凉和寂寞</p>
+                     
+                    <p>犹记得长安城里豪雨的午后</p>
+                     
+                    <p>雷纹商嵌的香炉</p>
+                     
+                    <p>袅袅飞升的篆烟</p>
+                     
+                    <p>春草绿上了你默默的石阶</p>
+                     
+                    <p>雨停之后，就是你亘古的安睡</p>
+                     
+                    <p>你梦着龙，梦着风，你梦着麒麟</p>
+                     
+                    <p>无边落木，随霜花以俱下</p>
+                     
+                    <p>回东方来，季候的迷失者啊</p>
+                     
+                    <p>歌台舞谢锁着两千年吴越的美学</p>
+                     
+                    <p>当细雨掩去你浪人的归路</p>
+                     
+                    <p>你苍白的吹箫人啊</p>
+                     
+                    <p>山海寂寂，长江东流如昔</p>
+                     
+                    <p>1962</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/min.html">min</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

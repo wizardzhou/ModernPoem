@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 我开始习惯喝生水 | contemporary </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash9.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    我开始习惯喝生水
+                </div>
+                <div class="author">
+                    刘东灵
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>在乡下的时候</p>
+                     
+                    <p>妈妈教育我不要喝生水</p>
+                     
+                    <p>说喝了肚子会痛的</p>
+                     
+                    <p>那时候虽然我们很穷</p>
+                     
+                    <p>但是开水我们还是喝得起的</p>
+                     
+                    <p>后来我到大城市读书了</p>
+                     
+                    <p>有段时间，城市里突然提倡喝生水</p>
+                     
+                    <p>在步行街还专门设有头朝上的</p>
+                     
+                    <p>水龙头给大家喝</p>
+                     
+                    <p>提倡的原因我不太清楚</p>
+                     
+                    <p>也许是养分多、氧气足</p>
+                     
+                    <p>对身体有好处吧</p>
+                     
+                    <p>反正那个时候，只要我到了步行街</p>
+                     
+                    <p>我就去找特设的水龙头喝生水</p>
+                     
+                    <p>甚至不买东西，专门抽时间去喝</p>
+                     
+                    <p>好象我要补回来什么似的</p>
+                     
+                    <p>后来就非典了</p>
+                     
+                    <p>呆在学校，哪儿也不准去</p>
+                     
+                    <p>妈妈打电话来说一定要注意清洁卫生</p>
+                     
+                    <p>我就又开始拒绝生水了</p>
+                     
+                    <p>直到解禁了，有一次我打了一壶开水回来</p>
+                     
+                    <p>喝了好几天</p>
+                     
+                    <p>直到发现几天以后的开水实在干涩</p>
+                     
+                    <p>我就只好喝生水</p>
+                     
+                    <p>谁让我又渴又不愿意去打开水呢</p>
+                     
+                    <p>可是现在，我要说的是</p>
+                     
+                    <p>我开始习惯喝生水拉</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/contemporary.html">contemporary</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

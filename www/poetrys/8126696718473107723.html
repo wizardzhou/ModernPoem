@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 两个世界 | min </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00069.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    两个世界
+                </div>
+                <div class="author">
+                    穆旦
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>看她装得像一只美丽的孔雀——</p>
+                     
+                    <p>五色羽毛镶着白边，</p>
+                     
+                    <p>粉红纱裙拖在人群里面，</p>
+                     
+                    <p>她快乐的心飘荡在半天。</p>
+                     
+                    <p>美丽可以使她样子欢喜和发狂，</p>
+                     
+                    <p>博得了喝彩，那是她的渴望；</p>
+                     
+                    <p>“高贵，荣耀，体面砌成了她们的世界！</p>
+                     
+                    <p>管它什么，那堆在四面的伤亡？”……</p>
+                     
+                    <p>隐隐的一阵哭声，却不在这里；</p>
+                     
+                    <p>孩子需要慈爱，哭嚷着，什么，“娘？”</p>
+                     
+                    <p>但这声音谁都不知道，“太偏僻！”</p>
+                     
+                    <p>哪知却惊碎了孩子的母亲的心肠？</p>
+                     
+                    <p>三岁孩子也舍得离开，叫他嚎，</p>
+                     
+                    <p>女人狠着心，“好孩子，不要哭——</p>
+                     
+                    <p>妈去做工，回来给你吃个饱！”</p>
+                     
+                    <p>丝缸里，女人的手泡了一整天，</p>
+                     
+                    <p>肿的臂，昏的头，带着疲倦的身体，</p>
+                     
+                    <p>摸黑回了家，便吐出一口长气……</p>
+                     
+                    <p>生活？简直把人磨成了烂泥！</p>
+                     
+                    <p>美的世界仍在跳跃，眩目，</p>
+                     
+                    <p>但她却惊呼，什么污迹染在那丝衣？</p>
+                     
+                    <p>同时远处更迸出了孩子的哭——</p>
+                     
+                    <p>“妈，怕啊，你的手上怎么满铺了血迹？”</p>
+                     
+                    <p>1933年</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/min.html">min</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

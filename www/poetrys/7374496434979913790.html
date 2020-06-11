@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 镜中幻象 | min </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash1.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    镜中幻象
+                </div>
+                <div class="author">
+                    张香华
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>晨起，对镜</p>
+                     
+                    <p>坐在梳妆椅上</p>
+                     
+                    <p>欣然喜见镜中一幕诡异</p>
+                     
+                    <p>自我颀长的颈项上端</p>
+                     
+                    <p>一片油绿的翠叶出生</p>
+                     
+                    <p>嫩嫩的茸毛，敷盖着碧叶</p>
+                     
+                    <p>守护每粒细微而翕动的毛孔</p>
+                     
+                    <p>四周凹凸不平的叶缘</p>
+                     
+                    <p>切割成精致的锯齿</p>
+                     
+                    <p>日光和水，在叶片中游走</p>
+                     
+                    <p>嬉戏，且相互追逐</p>
+                     
+                    <p>黄昏，对镜</p>
+                     
+                    <p>我再落坐梳妆椅</p>
+                     
+                    <p>见到另一幕惊奇与震栗</p>
+                     
+                    <p>从衣袍宽松领口褶间下</p>
+                     
+                    <p>我生出另一片叶子</p>
+                     
+                    <p>坚挺的叶柄延伸着</p>
+                     
+                    <p>主脉，修长而强韧</p>
+                     
+                    <p>侧脉分歧，锐角整齐美丽</p>
+                     
+                    <p>细脉羽状，纤维连结绵密</p>
+                     
+                    <p>清晰可鉴，脉理可数——</p>
+                     
+                    <p>一张密密的时间之网</p>
+                     
+                    <p>筛滤过∶青春、喜乐、盛名、财富</p>
+                     
+                    <p>幸福、圆满、忧愁、患苦</p>
+                     
+                    <p>我，终于蒸发成一枚</p>
+                     
+                    <p>干爽、轻灵、透明、玲珑的</p>
+                     
+                    <p>树叶的</p>
+                     
+                    <p>标本</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/min.html">min</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

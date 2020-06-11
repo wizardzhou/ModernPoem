@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 和微笑握手 | 中国现代诗五 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/img80.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="#" target="blank">互联网</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    和微笑握手
+                </div>
+                <div class="author">
+                    李贤平
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>在大街，目光总会游移不定</p>
+                     
+                     <p>多年的生活教你学会了搜寻</p>
+                     
+                     <p>一个少女穿着红衣从身边而过</p>
+                     
+                     <p>让你的思想传到更远</p>
+                     
+                     <p>但无法在嘈杂中静如灰尘</p>
+                     
+                     <p>多少年,对生活充满巨大的绝望</p>
+                     
+                     <p>让平庸占据平庸的身体</p>
+                     
+                     <p>通过立交桥下暂时的时光</p>
+                     
+                     <p>恢复宁静的片刻</p>
+                     
+                     <p>而美好,象闪电般一触崩溃</p>
+                     
+                     <p>商店门口,摆满喜怒哀乐的水果</p>
+                     
+                     <p>两天前它们遭遇掀翻的命运</p>
+                     
+                     <p>什么都记不住,只有眼前才是真实?</p>
+                     
+                     <p>你无法掀起内心的伤缝,往事如针</p>
+                     
+                     <p>一段已刺痛你,密密麻麻</p>
+                     
+                     <p>你漫无目的地前行</p>
+                     
+                     <p>破旧的自行车，陪你</p>
+                     
+                     <p>进入一个又一个黄昏</p>
+                     
+                     <p>迎来一次又一次朝阳的悠然</p>
+                     
+                     <p>搓搓手,微笑总会迎面而来的</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国现代诗五.html">中国现代诗五</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

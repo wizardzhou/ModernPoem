@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 少小离家 | json </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/wizardzhou20.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://weibo.com/wizardzhou/home" target="blank">wizardzhou</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    少小离家
+                </div>
+                <div class="author">
+                    宋渠宋炜
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>远远的时候，离开村庄</p>
+                     
+                    <p>少女的叶子遮盖我</p>
+                     
+                    <p>芦花和淡水</p>
+                     
+                    <p>养大了无数悲欢离合</p>
+                     
+                    <p>尖锐的思念插进胸口</p>
+                     
+                    <p>为了在秋天</p>
+                     
+                    <p>听到持续的回声</p>
+                     
+                    <p>故乡的一只竹箱</p>
+                     
+                    <p>保存着从前那些清白的早晨</p>
+                     
+                    <p>日子在里面静静安息</p>
+                     
+                    <p>想让红润的手指打开</p>
+                     
+                    <p>认出鸳鸯水草</p>
+                     
+                    <p>认出青梅竹马</p>
+                     
+                    <p>陈土和根</p>
+                     
+                    <p>但我没有眼泪</p>
+                     
+                    <p>去打湿那些钟情的花朵</p>
+                     
+                    <p>围住水井长大的女孩</p>
+                     
+                    <p>从不需要铜镜</p>
+                     
+                    <p>我燃起一堆树枝</p>
+                     
+                    <p>太阳在我身后蒸出蓝烟</p>
+                     
+                    <p>一张雾气的手帕</p>
+                     
+                    <p>包着几颗难忍的红豆</p>
+                     
+                    <p>想起大雁南飞</p>
+                     
+                    <p>想起骊歌长成河边的青草</p>
+                     
+                    <p>想起一支乌亮的铜箫</p>
+                     
+                    <p>至今还握在新娘的手中</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/json.html">json</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

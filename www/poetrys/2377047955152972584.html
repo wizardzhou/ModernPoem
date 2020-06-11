@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 离婚是浪漫的一种：致情人 | 中国现代诗六 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/wizardzhou.png');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://weibo.com/wizardzhou/home" target="blank">wizardzhou</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    离婚是浪漫的一种：致情人
+                </div>
+                <div class="author">
+                    沈睿
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>时间的种子在我们的心中栽下一行行</p>
+                     
+                     <p>无以泯灭的痛伤。而你，执傲地要改写生活，</p>
+                     
+                     <p>以为，这只是改写教科书。重写一章，把青春的期待</p>
+                     
+                     <p>放在倒数第二页。人到中年，离婚也是浪漫的一种。</p>
+                     
+                     <p>我从此爱你不绝，好象新婚蜜月。</p>
+                     
+                     <p>多年后我们注定会相聚。夕阳残照在你的身后，</p>
+                     
+                     <p>你的薄灰发抹着耀眼的光芒，你的大眼睛里</p>
+                     
+                     <p>盈满穿不透的黑暗：太迟了！不但理解来得太迟了，</p>
+                     
+                     <p>连道歉也太迟了！亲爱的，我的亲爱的，</p>
+                     
+                     <p>你的眼泪晶莹，你的泪珠大过眼睛：以青春的名义，</p>
+                     
+                     <p>让我们以青春的名义</p>
+                     
+                     <p>我倾听你的喃喃碎语，倾听浪涛起伏，</p>
+                     
+                     <p>时间的种子在你我的轨道之外已长成森林，</p>
+                     
+                     <p>往昔的情话都已成废墟上热烈的青草，</p>
+                     
+                     <p>连我们头上的白云也流向远方。亲爱的，</p>
+                     
+                     <p>我的亲爱的，我们就这样相望，耐心而无聊地等待：</p>
+                     
+                     <p>这场热闹的悲喜歌剧的终曲。</p>
+                     
+                     <p>19970318</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国现代诗六.html">中国现代诗六</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

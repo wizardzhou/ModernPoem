@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 政府的初恋 | contemporary </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/wizardzhou5.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://weibo.com/wizardzhou/home" target="blank">wizardzhou</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    政府的初恋
+                </div>
+                <div class="author">
+                    徐江
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>她感受到舌头的舔噬</p>
+                     
+                    <p>她当然惊讶</p>
+                     
+                    <p>恋人的臂膀令她稍许平静</p>
+                     
+                    <p>那潮湿不久就让她迷恋</p>
+                     
+                    <p>包括公园长廊外夜鸟的惊起</p>
+                     
+                    <p>那时她还不清楚</p>
+                     
+                    <p>湿润是疯狂的</p>
+                     
+                    <p>伟大的</p>
+                     
+                    <p>光荣的</p>
+                     
+                    <p>但不一定始终正确</p>
+                     
+                    <p>当她的女儿后来沉湎于网上</p>
+                     
+                    <p>因此获得职称</p>
+                     
+                    <p>爱情</p>
+                     
+                    <p>她每周疲乏地乘班车回家</p>
+                     
+                    <p>催教数学的丈夫买晚报</p>
+                     
+                    <p>核对中奖号码</p>
+                     
+                    <p>奋力包一顿饺子</p>
+                     
+                    <p>应付一到两次争吵</p>
+                     
+                    <p>那短短的一两天她会忘记</p>
+                     
+                    <p>早年的夏夜是美好的</p>
+                     
+                    <p>现在的高墙是坚强的</p>
+                     
+                    <p>她会猛的想不起恋人当年的模样</p>
+                     
+                    <p>她会突然在咱家厨房的隔壁唱起</p>
+                     
+                    <p>一首过时的歌</p>
+                     
+                    <p>呵</p>
+                     
+                    <p>她真的忘了</p>
+                     
+                    <p>穿不起制服的"政府"</p>
+                     
+                    <p>野百合也有春天</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/contemporary.html">contemporary</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

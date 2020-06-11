@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 周末，大街上 | contemporary </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash73.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    周末，大街上
+                </div>
+                <div class="author">
+                    胡续冬
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>周末，大街上挤满了乔装打扮的</p>
+                     
+                    <p>老女人。小叮当一眼就看穿了</p>
+                     
+                    <p>藏在她们肾上腺里的盗版VCD：</p>
+                     
+                    <p>好莱坞的激素驱动着她们</p>
+                     
+                    <p>汉语版的大腿，由解霸五</p>
+                     
+                    <p>控制的风骚有节奏地吐露出</p>
+                     
+                    <p>黑心财和肉心肝。满街的老女人</p>
+                     
+                    <p>一齐开动她们超频了的欲望主机，</p>
+                     
+                    <p>要删除街头的民工和新人类。</p>
+                     
+                    <p>小叮当目睹她们随手从香蕉里</p>
+                     
+                    <p>剥出了伟哥，把黄色丢弃一地。</p>
+                     
+                    <p>周末，病中的小玲珑思念</p>
+                     
+                    <p>熊姥姥的糖炒栗子。她掐指一算</p>
+                     
+                    <p>水果摊前的小叮当正在分心。</p>
+                     
+                    <p>她对着怒容满面的镜子哈了口</p>
+                     
+                    <p>扎里扎沙的热气：小叮当的胳肢窝</p>
+                     
+                    <p>一阵奇痒，迅速关掉了老女人的脸上</p>
+                     
+                    <p>正由大片向毛片过渡的视屏。</p>
+                     
+                    <p>他一粒接一粒，掂量着</p>
+                     
+                    <p>温暖的栗子里家庭的糖份，而</p>
+                     
+                    <p>老女人们也纷纷骑上带套的手机、</p>
+                     
+                    <p>扬（羊）鞭远去。在小叮当和小玲珑</p>
+                     
+                    <p>相隔的几百米周末里，重新挤满了</p>
+                     
+                    <p>民工和新人类，以及其他的犯罪。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/contemporary.html">contemporary</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

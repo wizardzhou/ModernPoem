@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 登东岩坞    遥知兄弟登高处  ──王维 | json </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/wizardzhou9.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://weibo.com/wizardzhou/home" target="blank">wizardzhou</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    登东岩坞    遥知兄弟登高处  ──王维
+                </div>
+                <div class="author">
+                    西渡
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>在阵阵松涛中呼吸到盐的气味！</p>
+                     
+                    <p>午后我们步入松荫，将村庄</p>
+                     
+                    <p>远远地撇在山下。我们继续向上攀升</p>
+                     
+                    <p>阳光在针叶上嗡鸣，轻轻托举着</p>
+                     
+                    <p>饶舌的喜鹊之窝。我用右手指点</p>
+                     
+                    <p>山脉与河流，把它们介绍给</p>
+                     
+                    <p>远道而来的友人。对面的群山</p>
+                     
+                    <p>有奔马的姿势，不，有奔马的灵魂</p>
+                     
+                    <p>正从岩石中挪出四蹄，朝天空飞去</p>
+                     
+                    <p>──岩石内部有血一样浓稠的岩浆</p>
+                     
+                    <p>那是万物狂燥而不安分的心灵</p>
+                     
+                    <p>应和着季节的节拍。这时从山下</p>
+                     
+                    <p>一个肉眼的观察者几乎不能发现我们</p>
+                     
+                    <p>除非我们从附近搬来石块，垒起灶头</p>
+                     
+                    <p>然后用干燥的松枝催燃神明的火焰</p>
+                     
+                    <p>他将猜测那是两个业余的狩猎者</p>
+                     
+                    <p>在享用他们愉快的时辰。他几乎猜对了</p>
+                     
+                    <p>只是我们猎获的仅仅是我们随风飘动</p>
+                     
+                    <p>的思绪，在半山腰，我们使它染上明亮的</p>
+                     
+                    <p>蓝烟，升起，并像情人的发辫一样散开──</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/json.html">json</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

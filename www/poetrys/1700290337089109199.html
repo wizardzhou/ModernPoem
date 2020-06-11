@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 永远的图腾 | json </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash24.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    永远的图腾
+                </div>
+                <div class="author">
+                    杨平
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>美</p>
+                     
+                    <p>在一刹那间完成</p>
+                     
+                    <p>人世所有的图腾。信仰是</p>
+                     
+                    <p>拒绝腐烂的精制饰品</p>
+                     
+                    <p>日常隐匿在灵魂最幽微的角落</p>
+                     
+                    <p>直到钟声（定时）响起</p>
+                     
+                    <p>再冷冷冷冷的突出本一切排楼之上</p>
+                     
+                    <p>信仰是早于拉丁时代的一场狂欢</p>
+                     
+                    <p>犹如毁灭总是伴着庆典而来：</p>
+                     
+                    <p>轮回大餐、经文沙拉、卡通仪式</p>
+                     
+                    <p>连同各色的传说调味料──</p>
+                     
+                    <p>五只鱼，两条面包，一杯浊酒</p>
+                     
+                    <p>复活的是梦魇，驱魔的是乩童</p>
+                     
+                    <p>光荣集一身于教皇，黑暗的</p>
+                     
+                    <p>是那段遥远破碎的如十字军岁月</p>
+                     
+                    <p>当我们终于知道上帝的旨意</p>
+                     
+                    <p>原是如此高蹈、如此歧义</p>
+                     
+                    <p>且又情绪化：善与恶</p>
+                     
+                    <p>黑与白</p>
+                     
+                    <p>天堂与地狱</p>
+                     
+                    <p>魔鬼终结者对抗阴间大法师</p>
+                     
+                    <p>惊惧的心加上永不过时的二元论加上</p>
+                     
+                    <p>昨夜，那不可预知的一闪</p>
+                     
+                    <p>──在告别肉体的同时</p>
+                     
+                    <p>是的，我们又一次纵情的耽溺于</p>
+                     
+                    <p>自语、自虐、近乎自渎的</p>
+                     
+                    <p>晚祷里……</p>
+                     
+                    <p>注：西方人的嘉年华会又称狂欢节，拉丁文为</p>
+                     
+                    <p>“对肉体告别”之意。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/json.html">json</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

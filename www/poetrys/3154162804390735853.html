@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 公共图书馆 | min </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash67.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    公共图书馆
+                </div>
+                <div class="author">
+                    九歌
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>无数本书籍被拿起</p>
+                     
+                    <p>它们敲开这秋天的大门</p>
+                     
+                    <p>我们也来了，披着思想的霓裳</p>
+                     
+                    <p>谁的文学艺术是我们的祖国</p>
+                     
+                    <p>千年的文明做什么样迷底</p>
+                     
+                    <p>如今我在这个风景中</p>
+                     
+                    <p>缅怀看不见的人物</p>
+                     
+                    <p>他们的心是世界的无名替身</p>
+                     
+                    <p>是信仰的躯体</p>
+                     
+                    <p>躺在这贫瘠的书架上</p>
+                     
+                    <p>我们是吃了春药的灵魂</p>
+                     
+                    <p>在祖先的果园里朝圣</p>
+                     
+                    <p>艺术在花墟里成熟</p>
+                     
+                    <p>山水被撤走</p>
+                     
+                    <p>然后我们身临其境，在这里</p>
+                     
+                    <p>被精心复制</p>
+                     
+                    <p>现在我们终于看懂了自己</p>
+                     
+                    <p>在秋天的身后</p>
+                     
+                    <p>用怀念一生的行旅</p>
+                     
+                    <p>倒叙这个漫长的场面</p>
+                     
+                    <p>艺术没有真正的名字</p>
+                     
+                    <p>挂在墙上的无数个相似的面孔</p>
+                     
+                    <p>在个性里解脱</p>
+                     
+                    <p>我们终于又成了人类的旁观者</p>
+                     
+                    <p>我们忘记了自己的国籍</p>
+                     
+                    <p>我们在秋天景象里</p>
+                     
+                    <p>辨认脸色</p>
+                     
+                    <p>接受精致的往事</p>
+                     
+                    <p>找到迷底我们开始设计命题</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/min.html">min</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

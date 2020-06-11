@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 山 | contemporary </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash1.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    山
+                </div>
+                <div class="author">
+                    杜运燮
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>来自平原，而只好放弃平原，</p>
+                     
+                    <p>植根于地球，却更想植根于云汉；</p>
+                     
+                    <p>茫茫平原的升华，它幻梦的形象，</p>
+                     
+                    <p>大家自豪有他，他却永远不满。</p>
+                     
+                    <p>他向往的是高远变化万千的天空，</p>
+                     
+                    <p>有无尽光热的太阳，博学含蓄的月亮，</p>
+                     
+                    <p>笑眼的星群，生命力最丰富的风，</p>
+                     
+                    <p>戴雪帽享受寂静冬日的安详。</p>
+                     
+                    <p>还喜欢一些有音乐天才的流水，</p>
+                     
+                    <p>挂一面瀑布，唱悦耳的质朴山歌；</p>
+                     
+                    <p>或者孤独的古庙，招引善男信女俯跪，</p>
+                     
+                    <p>有暮鼓晨钟单调地诉说某种饥饿，</p>
+                     
+                    <p>或者一些怪人隐士，羡慕他，追随他，</p>
+                     
+                    <p>欣赏人海的波涛起伏，却只能孤独地</p>
+                     
+                    <p>生活，到夜里，梦着流水流着梦，</p>
+                     
+                    <p>回到平原上唯一甜蜜的童年记忆。</p>
+                     
+                    <p>他追求，所以不满足，所以更追求：</p>
+                     
+                    <p>他没有桃花，没有牛羊、炊烟、村落；</p>
+                     
+                    <p>可以鸟瞰，有更多空气，也有更多石头；</p>
+                     
+                    <p>因为他只好离开他必需的，他永远寂寞。</p>
+                     
+                    <p>1945</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/contemporary.html">contemporary</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

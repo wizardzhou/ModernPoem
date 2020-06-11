@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 低岸 | contemporary </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash9.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    低岸
+                </div>
+                <div class="author">
+                    陈东东
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>黑河黑到了顶点。罗盘迟疑中上升</p>
+                     
+                    <p>被夜色继承的锥体暮星像一个</p>
+                     
+                    <p>导航员，纠正指针的霓虹灯偏向</p>
+                     
+                    <p>－－它光芒锐利的语言又借助风</p>
+                     
+                    <p>刺伤堤坝上阅读的瞳仁</p>
+                     
+                    <p>书页翻过了缓慢的幽暝，现在正展示</p>
+                     
+                    <p>沿河街景过量的那一章</p>
+                     
+                    <p>从高于海拔和坝下街巷的涨潮水平面</p>
+                     
+                    <p>从更高处：四川路桥巅的弧光灯晕圈</p>
+                     
+                    <p>－－城市的措词和建筑物滑落，堆向</p>
+                     
+                    <p>两岸－－因眼睛的迷惑而纷繁、神经质</p>
+                     
+                    <p>有如缠绕的欧化句式，复杂的语法</p>
+                     
+                    <p>沦陷了表达。在错乱中，一艘运粪船</p>
+                     
+                    <p>驰出桥拱，它逼开的寂静和倒影水流</p>
+                     
+                    <p>将席卷喧哗和一座炼狱朝河心回涌</p>
+                     
+                    <p>观望则由于厌倦，更厌倦：观望即沦陷</p>
+                     
+                    <p>视野在沥青坡道上倾斜，或者越过</p>
+                     
+                    <p>渐凉的栏杆。而在栏杆和坡道尽头</p>
+                     
+                    <p>仓库的教堂门廊之下，行人伫立，点烟</p>
+                     
+                    <p>深吸，支气管呛进了黑河忧郁物</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/contemporary.html">contemporary</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

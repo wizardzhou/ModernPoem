@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 大街，象自由的抒情诗一样流畅 | contemporary </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/wizardzhou10.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://weibo.com/wizardzhou/home" target="blank">wizardzhou</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    大街，象自由的抒情诗一样流畅
+                </div>
+                <div class="author">
+                    梁小斌
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>雨后的大街，笔直地伸向远方，</p>
+                     
+                    <p>从此岸到彼岸世界，</p>
+                     
+                    <p>这中间车辆象流水一般哗哗流淌。</p>
+                     
+                    <p>这时，我看见一个戴着太阳帽的孩子，</p>
+                     
+                    <p>来到岗亭前，</p>
+                     
+                    <p>和警察亲切地谈话。</p>
+                     
+                    <p>而一支全是由小朋友组成的队伍，</p>
+                     
+                    <p>正和谐、宁静地站在大街的一旁。</p>
+                     
+                    <p>我知道他们是在谈论——</p>
+                     
+                    <p>这支可爱的队伍，</p>
+                     
+                    <p>通过大街的方法。</p>
+                     
+                    <p>我沉思的目光，注视远方，</p>
+                     
+                    <p>我很激动，</p>
+                     
+                    <p>他们一定还谈论了别的，</p>
+                     
+                    <p>谈到了中国大街的前程，</p>
+                     
+                    <p>而且还谈到了诗和国家。</p>
+                     
+                    <p>我看见了：人民的警察——</p>
+                     
+                    <p>这人类大街的指挥者，</p>
+                     
+                    <p>从岗亭里探出身子，</p>
+                     
+                    <p>温和地倾听</p>
+                     
+                    <p>孩子的哲学思想，</p>
+                     
+                    <p>一个晒了很多太阳的中国孩子，</p>
+                     
+                    <p>或许能指出未来中国的方向。</p>
+                     
+                    <p>宽阔的大街象自由的抒情诗一样流畅，</p>
+                     
+                    <p>绿灯在前方闪烁着激荡我心灵的波光，</p>
+                     
+                    <p>一个孩子正在和警察和谐地谈话。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/contemporary.html">contemporary</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

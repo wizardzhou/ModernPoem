@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 别了，亲爱的朋友 | json </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/wizardzhou17.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://weibo.com/wizardzhou/home" target="blank">wizardzhou</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    别了，亲爱的朋友
+                </div>
+                <div class="author">
+                    南渡
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>告诉我，年轻的朋友，你们要到那里去</p>
+                     
+                    <p>那里去呢？在这黄沙浩渺的大西北</p>
+                     
+                    <p>风沙是多么的冷漠</p>
+                     
+                    <p>月亮是多么的甘美</p>
+                     
+                    <p>我怎么也舍不得说∶再见！让我说出再见</p>
+                     
+                    <p>内心的痛楚把我白天抑或黑夜的忧郁</p>
+                     
+                    <p>撕碎了，你会在一个雨天慢慢走远</p>
+                     
+                    <p>直到雨停下来，我在我们一起逗留过的屋檐</p>
+                     
+                    <p>用雨珠写下我和你一样悲辛的哀伤</p>
+                     
+                    <p>和野兽一样可怕的夜晚</p>
+                     
+                    <p>我一个人走在阴影下</p>
+                     
+                    <p>流动的阴影将我的疲累压的嘬不过气</p>
+                     
+                    <p>亲爱的朋友，我知道，你也不甘于明天的孤单</p>
+                     
+                    <p>你是一只纤小的花朵</p>
+                     
+                    <p>我化作旁边碧青的叶片</p>
+                     
+                    <p>陪伴着你，用一夜的火焰来燃烧枣红的相思</p>
+                     
+                    <p>面对越走越远的背影</p>
+                     
+                    <p>我怎么抓也抓不住</p>
+                     
+                    <p>在摇摆不定的人生旅途</p>
+                     
+                    <p>留下一串不平的脚印</p>
+                     
+                    <p>这些昔日的印迹将成为我们最后交换的礼物</p>
+                     
+                    <p>亲爱的朋友！此时，每一行诗句里都跳跃一个</p>
+                     
+                    <p>越来越模糊的你</p>
+                     
+                    <p>我期待着你的笑容偷偷侵入</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/json.html">json</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

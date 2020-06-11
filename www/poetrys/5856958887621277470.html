@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 一只蜜蜂停在早晨金色的阳光中 | min </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash75.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    一只蜜蜂停在早晨金色的阳光中
+                </div>
+                <div class="author">
+                    燕窝
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>她在观望它∶阳光，春天，和外面的世界</p>
+                     
+                    <p>气味芬芳，唾手可得，它们无视她</p>
+                     
+                    <p>站在它面前，被穿透，被劈开</p>
+                     
+                    <p>她暴怒了，水暴怒了</p>
+                     
+                    <p>水被伤害被阻隔被砍中</p>
+                     
+                    <p>水在常温下凝固，起立，站成</p>
+                     
+                    <p>一扇窗。她在某个早晨的阳光中</p>
+                     
+                    <p>醒来，水是透明的，她是透明的</p>
+                     
+                    <p>她在制造观音的试验中被搅动，被烧烤</p>
+                     
+                    <p>被一个小男孩路过，"看，多么浑浊"</p>
+                     
+                    <p>她失去控制，她在变成泥土的过程中</p>
+                     
+                    <p>失败，人们指出她的状况时</p>
+                     
+                    <p>摇摇头说，"她疯了"</p>
+                     
+                    <p>她变成一只蜜蜂</p>
+                     
+                    <p>停在这个早晨金色的阳光中</p>
+                     
+                    <p>多么安静，多么温暖</p>
+                     
+                    <p>水发出腥味，然而她并不知道</p>
+                     
+                    <p>她在阳光的另一面，阻隔它的</p>
+                     
+                    <p>是一扇玻璃窗。她和这个世界</p>
+                     
+                    <p>互相打量，"多么好的一副水晶棺材"</p>
+                     
+                    <p>她喜欢这些被过滤的日子，没有香气</p>
+                     
+                    <p>也没有什么挡住她的视线</p>
+                     
+                    <p>她觉得渴了。她慢慢爬上阳光的</p>
+                     
+                    <p>高处，一次次撞向那面摇晃的深水</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/min.html">min</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

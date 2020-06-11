@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 圣保罗的蝴蝶花    "一个人怎么会把它们描绘得这么美，他怎么会这么不幸呢"   ——摘自莫奈评凡高《蝴蝶花》 | min </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash5.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    圣保罗的蝴蝶花    "一个人怎么会把它们描绘得这么美，他怎么会这么不幸呢"   ——摘自莫奈评凡高《蝴蝶花》
+                </div>
+                <div class="author">
+                    燕窝
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>事情就是这样开始的</p>
+                     
+                    <p>事情开始时水流正好经过</p>
+                     
+                    <p>一个男人看了我一眼</p>
+                     
+                    <p>这是没有弹过的</p>
+                     
+                    <p>盐，充满明亮的音色</p>
+                     
+                    <p>那个早上他走向我</p>
+                     
+                    <p>站在树荫里，拿着画笔，微笑</p>
+                     
+                    <p>他有一张奇怪的脸，我听到</p>
+                     
+                    <p>他身体里巨大的轰鸣声</p>
+                     
+                    <p>但他相信大理石</p>
+                     
+                    <p>大理石是一种谎言</p>
+                     
+                    <p>它美丽的回纹是谎言花边</p>
+                     
+                    <p>他住在谎言的房子里</p>
+                     
+                    <p>踩着谎言的阶梯，走上高处</p>
+                     
+                    <p>他一生都没有着陆</p>
+                     
+                    <p>他睁开眼，就从云端掉下来</p>
+                     
+                    <p>"可以结束了吗"，他认出我</p>
+                     
+                    <p>我们一起在天堂吃草，远离众生</p>
+                     
+                    <p>他追逐我，我也追逐他</p>
+                     
+                    <p>他在我身体里打勾，他是凡高</p>
+                     
+                    <p>那个早上是天堂的礼拜七</p>
+                     
+                    <p>圣保罗收容所叫礼拜天的，也叫安息日</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/min.html">min</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

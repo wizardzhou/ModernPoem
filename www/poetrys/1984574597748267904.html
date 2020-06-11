@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 萧萧之歌 | min </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash17.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    萧萧之歌
+                </div>
+                <div class="author">
+                    纪弦
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>我对我的树说：我想</p>
+                     
+                    <p>要是我是一棵树多好哩！槐树、榆树或者梧桐。</p>
+                     
+                    <p>要是让我的两只脚和十个足趾深深地深入泥土</p>
+                     
+                    <p>里去，那么我就也有了枝条也有了繁多的叶子。</p>
+                     
+                    <p>当风来时</p>
+                     
+                    <p>我就也有了摇曳之姿。也唱萧萧之歌</p>
+                     
+                    <p>萧萧飒飒</p>
+                     
+                    <p>萧萧飒飒</p>
+                     
+                    <p>让人们听了心里难过，思乡</p>
+                     
+                    <p>和把大衣的领子翻起来。而在冬天</p>
+                     
+                    <p>我是全裸着的。因为我是落叶乔木</p>
+                     
+                    <p>不属于松柏科。——凡众人叹赏的</p>
+                     
+                    <p>就不免带几分俗气了。所以我的古铜色的</p>
+                     
+                    <p>头发将飘向遥远的城市。我的金黄色的</p>
+                     
+                    <p>头发将落在邻人的阶前。还有些琥珀般发红的</p>
+                     
+                    <p>则被爱美的女孩子拣了去，夹在纪念册里</p>
+                     
+                    <p>过些时日便遗忘了。于是当青绿的季节重来</p>
+                     
+                    <p>她们将在我的荫盖下纳凉、喝汽水</p>
+                     
+                    <p>和讲关于树的故事……然后</p>
+                     
+                    <p>用别针，在我的苍老的躯干上</p>
+                     
+                    <p>刻他们的情人的名字：诸如Y。H。啦</p>
+                     
+                    <p>TY啦RM啦ST啦YD啦LP啦以及其他</p>
+                     
+                    <p>等等，都是些个挺帅而又够古怪的家伙</p>
+                     
+                    <p>——我对我的树说。我的树</p>
+                     
+                    <p>是热带植物我手种的</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/min.html">min</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 时装杂志 | json </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/wizardzhou24.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://weibo.com/wizardzhou/home" target="blank">wizardzhou</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    时装杂志
+                </div>
+                <div class="author">
+                    宋琳
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>1</p>
+                     
+                    <p>内热的地球，香发之吻</p>
+                     
+                    <p>触动水罐的风也触动她的小腹</p>
+                     
+                    <p>手镯的金色小蛇，妩媚所向披靡</p>
+                     
+                    <p>因为她的笑死亡逃逸，我们体内岁月巍峨</p>
+                     
+                    <p>惊涛裂岸，五行之土流失，河面飘起</p>
+                     
+                    <p>血和意识形态混合的腥膻</p>
+                     
+                    <p>2</p>
+                     
+                    <p>迅速进化的裸猿穿上现代时装</p>
+                     
+                    <p>聚合起新的狂飙，太阳村落</p>
+                     
+                    <p>战争纪念碑矗立星形广场</p>
+                     
+                    <p>绝望的女像柱痛哭古希腊</p>
+                     
+                    <p>不得不漂离原初之地，夜贴近你</p>
+                     
+                    <p>而你犹豫着，朝东走还是朝西？</p>
+                     
+                    <p>3</p>
+                     
+                    <p>从大皇宫出来，我们酷肖</p>
+                     
+                    <p>穿深衣的一族，夸父的一族</p>
+                     
+                    <p>或许正在接近一个雪中的对拓点吧</p>
+                     
+                    <p>黄，泥土的黄，像某个电影画面</p>
+                     
+                    <p>说出它已经太迟了，但不妨一试</p>
+                     
+                    <p>异乡木偶，细细的提线几乎看不见</p>
+                     
+                    <p>4</p>
+                     
+                    <p>我是否淡忘了十年前发生的事？</p>
+                     
+                    <p>只相信所有的人都带着一口锅生活</p>
+                     
+                    <p>但那几个心形吉祥物后来丢失了</p>
+                     
+                    <p>残破的未完成，颧骨的山峰隆起</p>
+                     
+                    <p>多风世界中的我们被记忆削损着</p>
+                     
+                    <p>皮肤抗拒着流行感冒的气候</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/json.html">json</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

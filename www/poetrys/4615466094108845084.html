@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 古藤江中 | 中国近代诗六 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/img34.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="#" target="blank">互联网</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    古藤江中
+                </div>
+                <div class="author">
+                    冯振
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>千山万山一水长，奔流卷曲如羊肠。</p>
+                     
+                     <p>我从乡邑泛孤棹，到此忽觉心飞扬。</p>
+                     
+                     <p>试登高处聊极目，却望乡邑天一方。</p>
+                     
+                     <p>西江之水东汪汪，吞吐落日疑扶桑。</p>
+                     
+                     <p>波平风软江自走，水上乱石奔群羊。</p>
+                     
+                     <p>轻舟乘兴任所适，何异骏马驰周行。</p>
+                     
+                     <p>回风乍至波一作，坐觉天地忽低昂。</p>
+                     
+                     <p>须臾皓月江心见，万里一色凝清光。</p>
+                     
+                     <p>自疑身在广寒府，平视星汉空苍茫。</p>
+                     
+                     <p>又疑洞庭八月波，远吊帝子浮潇湘。</p>
+                     
+                     <p>安得佳人发皓齿，清歌进酒千杯强。</p>
+                     
+                     <p>灵妃拭尽斑竹泪，化为玉液与琼浆。</p>
+                     
+                     <p>人生欢乐诚无极，如此景物何能常。</p>
+                     
+                     <p>传言坡公曾至此，欲览遗迹今已亡。</p>
+                     
+                     <p>去年作诗怀往哲，今年更至增悲伤。</p>
+                     
+                     <p>江山应不异古昔，富贵磨灭何胜量。</p>
+                     
+                     <p>风尘况复兵戈满，自笑奔走为谁忙。</p>
+                     
+                     <p>及时行乐诚不谬，有酒到手须尽觞。</p>
+                     
+                     <p>眼前好景留不住，千载安用空名彰。</p>
+                     
+                     <p>但当乘桴浮沧海，不然返棹归故乡。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国近代诗六.html">中国近代诗六</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 垂直的泥土上  －－－在登山技术队中 | contemporary </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash23.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    垂直的泥土上  －－－在登山技术队中
+                </div>
+                <div class="author">
+                    郑愁予
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>背著海驰车</p>
+                     
+                    <p>朝阳在公路上滚来</p>
+                     
+                    <p>路树驼著路树直高到远方去</p>
+                     
+                    <p>在东的几乎是明天的那边</p>
+                     
+                    <p>我们将翻犁垂直的泥土</p>
+                     
+                    <p>将像云雀那麽生活在风上</p>
+                     
+                    <p>多彩的我们一如虹的家族</p>
+                     
+                    <p>在雨後群现</p>
+                     
+                    <p>却列队隐於谷中</p>
+                     
+                    <p>我们立於冰冷的壁上</p>
+                     
+                    <p>让胸像一样的胸任云撞击</p>
+                     
+                    <p>在高得几乎是家乡的那边</p>
+                     
+                    <p>挂好我们锚桩的秋千</p>
+                     
+                    <p>然後攀缘</p>
+                     
+                    <p>热情果常将我们的唇碰红</p>
+                     
+                    <p>眸与星子已如斯临近</p>
+                     
+                    <p>啊啊少年</p>
+                     
+                    <p>纵让星芒刺伤也是好的</p>
+                     
+                    <p>但假期已在垂直的土上熟了</p>
+                     
+                    <p>当图腾里的亘古已遭冰斧解冻</p>
+                     
+                    <p>星与眸子也以端详告别</p>
+                     
+                    <p>在海水与海水之间</p>
+                     
+                    <p>我们乃如朝阳升出</p>
+                     
+                    <p>而光和热的我们是另一种海</p>
+                     
+                    <p>将使空洞的尘寰……潮满……</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/contemporary.html">contemporary</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

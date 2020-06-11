@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 骆 驼 | 中国现代诗二 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash221.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    骆 驼
+                </div>
+                <div class="author">
+                    郭沫若
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>骆驼，你沙漠的船，</p>
+                     
+                     <p>你，有生命的山！</p>
+                     
+                     <p>在黑暗中，</p>
+                     
+                     <p>你昂头天外，</p>
+                     
+                     <p>导引着旅行者</p>
+                     
+                     <p>走向黎明的地平线。</p>
+                     
+                     <p>暴风雨来时，</p>
+                     
+                     <p>旅行者</p>
+                     
+                     <p>紧紧依靠着你，</p>
+                     
+                     <p>渡过了艰难。</p>
+                     
+                     <p>高贵的赠品呵，</p>
+                     
+                     <p>生命和信念，</p>
+                     
+                     <p>忘不了的温暖。</p>
+                     
+                     <p>春风吹醒了绿洲，</p>
+                     
+                     <p>贝拉树垂着甘果，</p>
+                     
+                     <p>到处是草茵和醴泉。</p>
+                     
+                     <p>优美的梦，</p>
+                     
+                     <p>象粉蝶翩跹，</p>
+                     
+                     <p>看到无边的漠地</p>
+                     
+                     <p>化为了良田。</p>
+                     
+                     <p>看呵，璀璨的火云已在天际弥漫，</p>
+                     
+                     <p>长征不会有</p>
+                     
+                     <p>歇脚的一天，</p>
+                     
+                     <p>纵使走到天尽头，</p>
+                     
+                     <p>天外也还有乐园。</p>
+                     
+                     <p>骆驼，你星际火箭，</p>
+                     
+                     <p>你，有生命的导弹！</p>
+                     
+                     <p>你给予了旅行者</p>
+                     
+                     <p>以天样的大胆。</p>
+                     
+                     <p>你请导引着向前，</p>
+                     
+                     <p>永远，永远！</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国现代诗二.html">中国现代诗二</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

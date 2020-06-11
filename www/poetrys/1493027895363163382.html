@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 声 音 | json </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash74.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    声 音
+                </div>
+                <div class="author">
+                    何其芳
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>鱼没有声音。蟋蟀以翅长鸣。</p>
+                     
+                    <p>人类的祖先直立行走后</p>
+                     
+                    <p>还应庆幸能以呼喊和歌唱</p>
+                     
+                    <p>吐出塞满咽喉的悲欢，</p>
+                     
+                    <p>如红色的火焰能使他们温暖，</p>
+                     
+                    <p>当他们在寒冷的森林中夜宴，</p>
+                     
+                    <p>手掌上染着兽血</p>
+                     
+                    <p>或者紧握着石斧，石剑。</p>
+                     
+                    <p>但是谁制造出精巧的弓关，</p>
+                     
+                    <p>射中了一只驯鹿</p>
+                     
+                    <p>又转身来射他兄弟的头额？</p>
+                     
+                    <p>于是有了十层洋楼高的巨炮</p>
+                     
+                    <p>威胁着天空的和平，</p>
+                     
+                    <p>轧轧的铁翅间激下火种</p>
+                     
+                    <p>能烧毁一切城市的骨骼：钢铁和水门汀</p>
+                     
+                    <p>不幸在人工制造的死亡的面前，</p>
+                     
+                    <p>人类丧失了声音</p>
+                     
+                    <p>像鱼</p>
+                     
+                    <p>在黑色的网里。</p>
+                     
+                    <p>当长长的阵亡者的名单继续传来，</p>
+                     
+                    <p>后死者仍默默地在粮食恐慌中</p>
+                     
+                    <p>找寻一片马铃薯，一个鸡蛋。</p>
+                     
+                    <p>而那几个发狂的赌徒也是默默地</p>
+                     
+                    <p>用他们肥大而白的手指</p>
+                     
+                    <p>以人类的命运为孤注</p>
+                     
+                    <p>压在结果全输的点子间。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/json.html">json</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

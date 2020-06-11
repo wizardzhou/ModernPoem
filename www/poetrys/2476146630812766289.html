@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 惘然 | min </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash30.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    惘然
+                </div>
+                <div class="author">
+                    张错
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>多么容易说的一句话，</p>
+                     
+                    <p>多么容易感动的一个名词</p>
+                     
+                    <p>甚至午夜饮泣和追悔，</p>
+                     
+                    <p>可以清晨奔出屋外</p>
+                     
+                    <p>面对冰雪溶解的初春，</p>
+                     
+                    <p>横眉冷顾天下----</p>
+                     
+                    <p>为的就是一个情字，</p>
+                     
+                    <p>就准备拼尽一身的笔墨----</p>
+                     
+                    <p>去搜寻那偶然的刹那，</p>
+                     
+                    <p>花朵无数的怒放，</p>
+                     
+                    <p>河流急促的湍折，</p>
+                     
+                    <p>山脉惊心的倒影，</p>
+                     
+                    <p>手的相握，</p>
+                     
+                    <p>额的想触，眼睛动魄的相遇，</p>
+                     
+                    <p>之后，就冒昧的付出一生</p>
+                     
+                    <p>漫长而无奈，</p>
+                     
+                    <p>惘然而不安，</p>
+                     
+                    <p>一生，只有一次，</p>
+                     
+                    <p>而情字，是否只写一次？</p>
+                     
+                    <p>只吟哦一次？</p>
+                     
+                    <p>一死，亦只有一次，</p>
+                     
+                    <p>是否只许是一首诗歌的重叠？</p>
+                     
+                    <p>只许反覆着一种主题？</p>
+                     
+                    <p>一生的豪情可以任意挥霍，</p>
+                     
+                    <p>一生的爱情却是孤注的一掷，</p>
+                     
+                    <p>所以，无论是发生或忆及，</p>
+                     
+                    <p>感动或饮泣，</p>
+                     
+                    <p>无数次当时的惘然，</p>
+                     
+                    <p>名份却只有一种。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/min.html">min</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

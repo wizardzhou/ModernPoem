@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 甜蜜 | contemporary </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash26.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    甜蜜
+                </div>
+                <div class="author">
+                    清平
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>我曾努力回想甜蜜的往事。</p>
+                     
+                    <p>那些蜂房中极尽变化的花粉所不能消磨的</p>
+                     
+                    <p>时光和人物，以及另一些更难觉察的甜蜜</p>
+                     
+                    <p>对我有限的记忆是多大的考验。</p>
+                     
+                    <p>我可以体面地退出吗？</p>
+                     
+                    <p>或者在心中喋喋不休，如同那些走在一起</p>
+                     
+                    <p>却不能互相战斗的敌人。</p>
+                     
+                    <p>我的权利是否和我的精力一样有限？</p>
+                     
+                    <p>我是否依然年轻而有足够的力量</p>
+                     
+                    <p>将多年前一次毫无结果的回忆重新拾起？</p>
+                     
+                    <p>我还能够毫不费力地弯腰。可我的手指</p>
+                     
+                    <p>是否依旧灵活，不至于错抓起别的事物</p>
+                     
+                    <p>一些别人的敝帚之珍？</p>
+                     
+                    <p>天哪，我竟可以不回答这些暮气沉沉的问题。</p>
+                     
+                    <p>如今的甜蜜依然极盛，不顾厌世者的批评。</p>
+                     
+                    <p>我占有小小的一份，就像一条泥鳅占有一个小小的水塘</p>
+                     
+                    <p>却不能游得欢畅。</p>
+                     
+                    <p>因为我留恋太多水底的美景——那些不美的我也错看。</p>
+                     
+                    <p>是啊，和万物一样，我的难题也仅是天性。</p>
+                     
+                    <p>我的生会若是比短暂稍稍长久一比</p>
+                     
+                    <p>我也不能掉以轻心</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/contemporary.html">contemporary</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

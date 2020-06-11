@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 怀屈原 | json </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/wizardzhou18.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://weibo.com/wizardzhou/home" target="blank">wizardzhou</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    怀屈原
+                </div>
+                <div class="author">
+                    麦穗
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>龙舟划过</p>
+                     
+                    <p>在水纹的回荡里</p>
+                     
+                    <p>总会怀想你</p>
+                     
+                    <p>顺着长江</p>
+                     
+                    <p>沿着夏水</p>
+                     
+                    <p>在放逐的路途上</p>
+                     
+                    <p>跋涉着行吟着</p>
+                     
+                    <p>将奕奕秀朗的神采</p>
+                     
+                    <p>吟唱成一身枯槁</p>
+                     
+                    <p>冬冬的鼓声</p>
+                     
+                    <p>沉重</p>
+                     
+                    <p>一如你踏向汨罗的履声</p>
+                     
+                    <p>抱起坚石</p>
+                     
+                    <p>是抱着坚定不移的意志</p>
+                     
+                    <p>诗人啊</p>
+                     
+                    <p>在举世仍然混浊</p>
+                     
+                    <p>在众人仍然沉醉的时刻</p>
+                     
+                    <p>终于你有了最后的选择</p>
+                     
+                    <p>选择了洁净清澄的江水</p>
+                     
+                    <p>将离骚留向千秋</p>
+                     
+                    <p>把坎坷的一生埋于清流</p>
+                     
+                    <p>五月的晴空里</p>
+                     
+                    <p>从汨罗江中溅起的水珠</p>
+                     
+                    <p>闪亮着诗人</p>
+                     
+                    <p>瞬间也是永远不朽的志节</p>
+                     
+                    <p>三闾大夫</p>
+                     
+                    <p>从此</p>
+                     
+                    <p>五月属于你的</p>
+                     
+                    <p>也属于诗的</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/json.html">json</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

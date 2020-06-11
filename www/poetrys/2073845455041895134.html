@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 题城南试卷 | 中国近代诗七 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash208.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    题城南试卷
+                </div>
+                <div class="author">
+                    高树
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>二十年前写试册，六儿娶妇在京得。</p>
+                     
+                     <p>老兄一见泪淋浪，此是弟兄始通籍。</p>
+                     
+                     <p>保和殿上风日炎，弟坐殿廊兄内室。</p>
+                     
+                     <p>兄当淹迟日逾午，弟为兄忧卷将撤。</p>
+                     
+                     <p>三篇以后不停挥，欲代兄书完赵璧。</p>
+                     
+                     <p>那知书竟两无误，下殿三竿见斜日。</p>
+                     
+                     <p>朝房不坐寂无事，弟抽鼠毫尽馀墨。</p>
+                     
+                     <p>迄今回首恍如梦，石洞场边草萧瑟。</p>
+                     
+                     <p>常经庐馆问行寓，回忆都城遇兵燹。</p>
+                     
+                     <p>甘泉宫中照烽火，铜驼陌上生荆棘。</p>
+                     
+                     <p>德兵携去褚翁书，倭人拾去羲之帖。</p>
+                     
+                     <p>武英殿版付焚毁，永乐大典无从觅。</p>
+                     
+                     <p>吾弟此卷何处藏，并无蛛丝与鼠迹。</p>
+                     
+                     <p>糊名纸角灿然新，如见挥毫墨犹湿。</p>
+                     
+                     <p>卷面二甲九十五，朱字标题先帝笔。</p>
+                     
+                     <p>卷尾读卷十大臣，首恩次徐终为薛。</p>
+                     
+                     <p>肝肠崩裂难久看，付与六儿长什袭。</p>
+                     
+                     <p>作诗记事寄拙园，明岁入都跋卷帙。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国近代诗七.html">中国近代诗七</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 亚细亚的孤儿  ——为马骅而作 | min </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/unsplash29.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="https://unsplash.com" target="blank">unsplash</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    亚细亚的孤儿  ——为马骅而作
+                </div>
+                <div class="author">
+                    胡续冬
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    
+                    <p>太平洋大厦的第十三层，</p>
+                     
+                    <p>亚细亚的孤儿在风中哭泣。</p>
+                     
+                    <p>他把羊群赶进电脑，独自</p>
+                     
+                    <p>坐在鼠标上数星星。</p>
+                     
+                    <p>星星啊星星真美丽，</p>
+                     
+                    <p>明天的早餐在CEO那里。</p>
+                     
+                    <p>他左手擤了擤小癞子鼻涕，</p>
+                     
+                    <p>右手撩开脏兮兮的显示屏</p>
+                     
+                    <p>偷看大人们的小秘密。</p>
+                     
+                    <p>那个着了凉的光屁股阿姨</p>
+                     
+                    <p>一个喷嚏就把他打了出来，</p>
+                     
+                    <p>让他去网上邻居找亲戚。</p>
+                     
+                    <p>亲戚们正在瓜分他的羊：</p>
+                     
+                    <p>有的把羊头和狗肉链接到一起，</p>
+                     
+                    <p>有的正用dreamweaver加工羊皮。</p>
+                     
+                    <p>没有人理会他。没有人夸奖</p>
+                     
+                    <p>他小眼睛的水灵和</p>
+                     
+                    <p>青蛙T恤上的葱心绿。</p>
+                     
+                    <p>他只有开动罗大佑的扫描仪</p>
+                     
+                    <p>把顽皮的幽灵存进服务器，让这</p>
+                     
+                    <p>IT世界的未来主人翁</p>
+                     
+                    <p>在通往天国的光缆上飘来飘去。</p>
+                     
+                    <p>而在太平洋，亚细亚的孤儿</p>
+                     
+                    <p>仍在中央空调的风中哭泣。</p>
+                     
+                    <p>8．4</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/min.html">min</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

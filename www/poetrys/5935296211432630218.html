@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 台中道上 | 中国近代诗五十五 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/img40.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="#" target="blank">互联网</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    台中道上
+                </div>
+                <div class="author">
+                    苏大山
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>忍犯春寒破晓行，尖风料峭雨微冥。</p>
+                     
+                     <p>大屯一角浑如睡，寂寂青山唤不醒。</p>
+                     
+                     <p>自惭不解陬隅语，远道多劳问讯频。</p>
+                     
+                     <p>我自看山来海外，错呼玉局是诗人。</p>
+                     
+                     <p>逢人但道家居好，偷息宁知鸩毒悲。</p>
+                     
+                     <p>莫说树人说树木，冬青不种种相思。</p>
+                     
+                     <p>轣辘声中去路遥，春愁黯黯独魂销。</p>
+                     
+                     <p>匆匆十日三经过，识得征人是板桥。</p>
+                     
+                     <p>绛皮细裹红金肉，岁晚香生白定瓯。</p>
+                     
+                     <p>今日桃园真在望，那堪抱蔓使人愁。</p>
+                     
+                     <p>天漏都无一日晴，如何翻覆太分明。</p>
+                     
+                     <p>一车乡午过新竹，却少潇潇听雨声。</p>
+                     
+                     <p>唤卖声声入耳频，一担薇蕨雨馀春。</p>
+                     
+                     <p>谁知采得香盈掬，不是西山山上人。</p>
+                     
+                     <p>老境如君真烂熳，临风侧挺自夭斜。</p>
+                     
+                     <p>天教来与芳菲斗，紫蔗经春尽著花。</p>
+                     
+                     <p>到此陡令心黯淡，投胶无术恨偏多。</p>
+                     
+                     <p>独清终古灵均死，举世滔滔奈汝何。</p>
+                     
+                     <p>地辟野真无旷土，令行国亦少游民。</p>
+                     
+                     <p>如何崔浩严流品，待遇终殊内地人。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国近代诗五十五.html">中国近代诗五十五</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <title> 血观音歌 | 中国当代诗二 </title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="Wizardzhou, 万物有灵且美.">
+        <meta name="keywords"  content="Wizardzhou,, Python, Django, Poem, chinese-poetry">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css?v=3334">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="../../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="../../assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('../../assets/images/ying.png'); ">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/img52.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="#" target="blank">互联网</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="inner-wrapper">
+                <div class="title">
+                    血观音歌
+                </div>
+                <div class="author">
+                    田翠竹
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                     
+                     <p>西风一夜江潮冷，秣陵秋尽梧桐影。</p>
+                     
+                     <p>燕去情伤玳瑁梁，月明愁杀胭脂井。</p>
+                     
+                     <p>井畔佳人迹已陈，芳菲无复旧时春。</p>
+                     
+                     <p>狼烟滚滚来淞沪，铁甲纷纷弃要津。</p>
+                     
+                     <p>寇酋松井知名久，亲率胡儿满城走。</p>
+                     
+                     <p>屠刀挥处血花飞，四十万人葬尘土。</p>
+                     
+                     <p>一将嚣张万骨枯，东京彻夜下军书。</p>
+                     
+                     <p>寇酋归去余惆怅，功过无凭赋子虚。</p>
+                     
+                     <p>杀人如草应知罪，永夜扪心深忏悔。</p>
+                     
+                     <p>袈裟一袭作枯僧，形骸僵槁类山鬼。</p>
+                     
+                     <p>多谢前村塑像人，参禅话旧倍相亲。</p>
+                     
+                     <p>取将战地泥和血，龛前寂寞香烟结。</p>
+                     
+                     <p>制就观音自在身，是佛是泥还是血。</p>
+                     
+                     <p>佛若工愁血尚腥，血如有恨佛应说。</p>
+                     
+                     <p>花开花落寺门前，春去春来剧可怜。</p>
+                     
+                     <p>案上红鱼喧怨语，枕边清泪忆当年。</p>
+                     
+                     <p>空山风雨寒茅屋，蕉影满窗愁满腹。</p>
+                     
+                     <p>残灯无焰佛无灵，夜夜禅堂闻鬼哭。</p>
+                     
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="../../www/list/中国当代诗二.html">中国当代诗二</a></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">水月</div>
+                <span id="jinrishici-sentence">掬水月在手，弄花香满衣.</span>
+            </div>
+
+            <div class="end content">
+                <p>© <a class="link under" href="https://weibo.com/wizardzhou/home">wizardzhou.weibo</a> 2020</p>
+            </div>
+        </div>
+        <a href="http://wizardzhou.gitee.io/poem/" class="home-page" aria-label="View my home">
+            <img border="0" src="/images/wizardzhou.png" />
+        </a>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>
